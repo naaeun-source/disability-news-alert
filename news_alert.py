@@ -3,6 +3,8 @@ import re
 import json
 import time
 import requests
+from email.utils import parsedate_to_datetime
+from datetime import datetime, timezone, timedelta
 
 NAVER_CLIENT_ID = os.environ["NAVER_CLIENT_ID"]
 NAVER_CLIENT_SECRET = os.environ["NAVER_CLIENT_SECRET"]
@@ -10,6 +12,9 @@ TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 SENT_FILE = "sent_urls.json"
+
+# 최근 몇 시간 이내 기사만 발송할지 (오래된 기사 차단용)
+MAX_AGE_HOURS = 48
 
 # 감시 키워드
 # label : 텔레그램에 표시될 이름
@@ -29,7 +34,15 @@ def clean_html(text):
     return text.strip()
 
 
-def search_naver(query, display=30):
+def is_recent(pubdate_str):
+    try:
+        dt = parsedate_to_datetime(pubdate_str)
+        return (datetime.now(timezone.utc) - dt) <= timedelta(hours=MAX_AGE_HOURS)
+    except Exception:
+        return True
+
+
+def search_naver(query, display=100):
     url = "https://openapi.naver.com/v1/search/news.json"
     headers = {
         "X-Naver-Client-Id": NAVER_CLIENT_ID,
@@ -81,24 +94,34 @@ def main():
             desc = clean_html(item.get("description", ""))
             combined = title + " " + desc
 
+            # AND 조건 확인
             if not all(w in combined for w in kw["must_include"]):
                 continue
+            # 이미 본 기사면 건너뜀
             if link in sent_urls:
                 continue
 
+            # 신규 기사 → 일단 '본 기사'로 기록
             sent_urls.add(link)
             order.append(link)
 
-            if not first_run:
-                message = f"🔔 [{kw['label']}]\n\n{title}\n\n{link}"
-                try:
-                    send_telegram(message)
-                    new_count += 1
-                    time.sleep(1)
-                except Exception as e:
-                    print(f"발송 오류: {e}")
+            # 첫 실행이면 발송하지 않음(과거 기사 폭탄 방지)
+            if first_run:
+                continue
+            # 오래된 기사면 기록만 하고 발송하지 않음
+            if not is_recent(item.get("pubDate", "")):
+                continue
 
-    order = order[-2000:]
+            # 최근 신규 기사만 발송
+            message = f"🔔 [{kw['label']}]\n\n{title}\n\n{link}"
+            try:
+                send_telegram(message)
+                new_count += 1
+                time.sleep(1)
+            except Exception as e:
+                print(f"발송 오류: {e}")
+
+    order = order[-3000:]
     save_sent(order)
 
     if first_run:
