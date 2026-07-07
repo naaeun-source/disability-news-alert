@@ -1,0 +1,44 @@
+name: 장애인 뉴스 키워드 알림
+
+on:
+  schedule:
+    # 아래 시각은 UTC 기준이며 한국시간(KST)으로 자동 환산됨
+    - cron: "0 0,3,6 * * 1-5"      # 평일 09:00 / 12:00 / 15:00 KST
+    - cron: "0,30 9-12 * * 1-5"    # 평일 18:00~21:30 (30분 간격) KST
+    - cron: "0 13 * * 1-5"         # 평일 22:00 KST
+    - cron: "0 7-13 * * 0"         # 일요일 16:00~22:00 (1시간 간격) KST
+  workflow_dispatch:                # 수동 실행 버튼
+
+permissions:
+  contents: write
+
+jobs:
+  alert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: 파이썬 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 라이브러리 설치
+        run: pip install requests
+
+      - name: 알림 실행
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python news_alert.py
+
+      - name: 발송 기록 저장
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add sent_urls.json
+          git commit -m "update sent urls" || echo "변경 없음"
+          git push
