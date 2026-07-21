@@ -1,13 +1,7 @@
 name: 장애인 뉴스 키워드 알림
 
 on:
-  schedule:
-    # 아래 시각은 UTC 기준이며 한국시간(KST)으로 자동 환산됨
-    - cron: "0 0,3,6 * * 1-5"      # 평일 09:00 / 12:00 / 15:00 KST
-    - cron: "0,30 9-12 * * 1-5"    # 평일 18:00~21:30 (30분 간격) KST
-    - cron: "0 13 * * 1-5"         # 평일 22:00 KST
-    - cron: "0 7-13 * * 0"         # 일요일 16:00~22:00 (1시간 간격) KST
-  workflow_dispatch:                # 수동 실행 버튼
+  workflow_dispatch:   # 외부(cron-job.org)에서만 실행
 
 permissions:
   contents: write
