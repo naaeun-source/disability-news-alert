@@ -13,29 +13,17 @@ TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
 
 SENT_FILE = "sent_urls.json"
-
-# 최근 몇 시간 이내 기사만 발송할지 (오래된 기사 차단용)
 MAX_AGE_HOURS = 48
-# 텔레그램 한 메시지 최대 길이(4096자) 대비 안전 한도
 MSG_LIMIT = 3800
-# 제목 유사도 기준(0~1). 높을수록 '거의 똑같아야' 같은 묶음으로 봄
 SIM_THRESHOLD = 0.70
-# 실행 간 중복 판별용으로 보관할 최근 제목 지문 개수
 SIG_KEEP = 1000
 
-# ── 감시 키워드 ──────────────────────────────────────────────
-# label : 텔레그램에 표시될 이름
-# query : 네이버 검색어. "+단어"=반드시 포함(AND). 네이버는 본문까지 색인하므로
-#         +로 두 단어를 강제하면 '제목 또는 본문'에 두 단어가 있는 기사가 검색됨
-# title_words : 제목 전용 모드일 때 제목에 있어야 하는 단어(선택)
 KEYWORDS = [
     {"label": "전장연", "query": "전장연"},
     {"label": "탈시설", "query": "탈시설"},
     {"label": "장애인+서울시", "query": "+장애인 +서울시", "title_words": ["장애인", "서울시"]},
 ]
-# 제목에만 단어가 든 기사로 좁히려면 True (정확도 우선, 본문전용 기사 누락 가능)
 USE_TITLE_ONLY = False
-# ────────────────────────────────────────────────────────────
 
 
 def clean_html(text):
@@ -46,7 +34,6 @@ def clean_html(text):
 
 
 def norm_title(t):
-    # 대괄호·괄호·기호·공백 제거하여 제목 지문 생성
     t = re.sub(r"\[[^\]]*\]", "", t)
     t = re.sub(r"\([^)]*\)", "", t)
     t = re.sub(r"【[^】]*】", "", t)
@@ -69,14 +56,12 @@ def is_recent(pubdate_str):
 
 def search_naver(query, display=100):
     url = "https://openapi.naver.com/v1/search/news.json"
-    headers = {
-        "X-Naver-Client-Id": NAVER_CLIENT_ID,
-        "X-Naver-Client-Secret": NAVER_CLIENT_SECRET,
-    }
+    headers = {"X-Naver-Client-Id": NAVER_CLIENT_ID,
+               "X-Naver-Client-Secret": NAVER_CLIENT_SECRET}
     params = {"query": query, "display": display, "sort": "date"}
-    resp = requests.get(url, headers=headers, params=params, timeout=15)
-    resp.raise_for_status()
-    return resp.json().get("items", [])
+    r = requests.get(url, headers=headers, params=params, timeout=15)
+    r.raise_for_status()
+    return r.json().get("items", [])
 
 
 def load_sent():
@@ -94,17 +79,30 @@ def save_sent(urls, sigs):
 
 
 def send_telegram(text):
+    """성공하면 True, 실패하면 False 반환하고 이유를 로그에 출력"""
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     payload = {"chat_id": TELEGRAM_CHAT_ID, "text": text,
                "disable_web_page_preview": True}
-    requests.post(url, data=payload, timeout=15)
+    try:
+        r = requests.post(url, data=payload, timeout=15)
+        body = r.json()
+    except Exception as e:
+        print(f"  [발송 실패] 네트워크 오류: {e}")
+        return False
+    if r.ok and body.get("ok"):
+        return True
+    # 텔레그램이 알려주는 실패 이유를 그대로 출력
+    print(f"  [발송 실패] code={r.status_code} "
+          f"reason={body.get('description', '알 수 없음')}")
+    return False
 
 
-def send_grouped(clusters_by_label, cluster_count):
+def send_grouped(clusters, cluster_count):
+    """묶음 전체를 메시지로 만들어 발송. 모든 조각이 성공해야 True"""
     parts = [f"🔔 새 기사 {cluster_count}건"]
-    for label, clusters in clusters_by_label.items():
+    for label, group in clusters.items():
         parts.append(f"\n[{label}]")
-        for i, c in enumerate(clusters, 1):
+        for i, c in enumerate(group, 1):
             extra = f" (외 {len(c['members']) - 1}개 매체)" if len(c["members"]) > 1 else ""
             parts.append(f"{i}. {c['rep_title']}{extra}\n{c['rep_link']}")
 
@@ -118,20 +116,23 @@ def send_grouped(clusters_by_label, cluster_count):
     if cur:
         chunks.append(cur)
 
+    all_ok = True
     for c in chunks:
-        send_telegram(c)
+        if not send_telegram(c):
+            all_ok = False
         time.sleep(1)
+    return all_ok
 
 
 def main():
     first_run = not os.path.exists(SENT_FILE)
     urls, sigs = load_sent()
-    seen_urls = set(urls)
+    seen = set(urls)
     order = list(urls)
     recent_sigs = list(sigs)
+    run_seen = set()
 
-    # 라벨별로 이번 실행 신규 기사를 유사도로 묶음
-    clusters_by_label = {}
+    clusters = {}  # label -> [{rep_title, rep_link, sig, members:[(title,link)]}]
 
     for kw in KEYWORDS:
         try:
@@ -149,56 +150,68 @@ def main():
             if USE_TITLE_ONLY and kw.get("title_words"):
                 if not all(w in title for w in kw["title_words"]):
                     continue
-            if link in seen_urls:
+            if link in seen or link in run_seen:
                 continue
+            run_seen.add(link)
 
-            seen_urls.add(link)
-            order.append(link)
-
+            # 첫 실행: 발송 없이 지문·URL만 기록
             if first_run:
-                # 첫 실행: 발송 안 함. 지문만 축적해 이후 중복 판별에 사용
+                order.append(link)
+                seen.add(link)
                 recent_sigs.append(norm_title(title))
                 continue
+            # 오래된 기사: 발송 안 함, 본 것으로만 기록
             if not is_recent(item.get("pubDate", "")):
+                order.append(link)
+                seen.add(link)
                 continue
 
             sig = norm_title(title)
-            # 지난 실행들에서 이미 보낸 기사와 거의 동일하면 발송 제외
+            # 지난 실행에서 이미 보낸 기사와 유사 → 발송 안 함, 본 것으로 기록
             if any(similar(sig, s) >= SIM_THRESHOLD for s in recent_sigs):
+                order.append(link)
+                seen.add(link)
                 continue
 
-            # 이번 실행 안에서 유사 기사끼리 묶기
-            clusters = clusters_by_label.setdefault(kw["label"], [])
+            # 발송 후보 → 이번 실행 안에서 유사끼리 묶음
+            group = clusters.setdefault(kw["label"], [])
             placed = False
-            for c in clusters:
+            for c in group:
                 if similar(sig, c["sig"]) >= SIM_THRESHOLD:
                     c["members"].append((title, link))
                     placed = True
                     break
             if not placed:
-                clusters.append({"rep_title": title, "rep_link": link,
-                                 "sig": sig, "members": [(title, link)]})
+                group.append({"rep_title": title, "rep_link": link,
+                              "sig": sig, "members": [(title, link)]})
 
     if first_run:
         save_sent(order, recent_sigs)
         print(f"첫 실행: {len(order)}건 기록 완료 (발송 안 함)")
         return
 
-    # 발송 확정된 묶음의 대표 지문을 최근 지문에 추가
-    cluster_count = 0
-    for label, clusters in clusters_by_label.items():
-        for c in clusters:
-            recent_sigs.append(c["sig"])
-            cluster_count += 1
-
-    save_sent(order, recent_sigs)
-
+    cluster_count = sum(len(g) for g in clusters.values())
     if cluster_count == 0:
+        save_sent(order, recent_sigs)
         print("신규 발송: 0건")
         return
 
-    send_grouped(clusters_by_label, cluster_count)
-    print(f"신규 발송: {cluster_count}개 묶음")
+    ok = send_grouped(clusters, cluster_count)
+
+    if ok:
+        # 발송 성공한 경우에만 '본 기사'로 기록 (실패 시 다음 실행에서 재시도)
+        for label, group in clusters.items():
+            for c in group:
+                for _, link in c["members"]:
+                    order.append(link)
+                    seen.add(link)
+                recent_sigs.append(c["sig"])
+        save_sent(order, recent_sigs)
+        print(f"신규 발송 성공: {cluster_count}묶음")
+    else:
+        # 실패분은 기록하지 않고 저장만(다음 실행 재시도). 오래된/중복 기록은 유지
+        save_sent(order, recent_sigs)
+        print(f"발송 실패: {cluster_count}묶음 — 다음 실행에서 재시도됨 (위 실패 사유 확인)")
 
 
 if __name__ == "__main__":
