@@ -23,7 +23,7 @@ KEYWORDS = [
     {"label": "탈시설", "query": "탈시설"},
     {"label": "장애인+서울시", "query": "+장애인 +서울시", "title_words": ["장애인", "서울시"]},
     {"label": "발달장애", "query": "발달장애"},
-    {"label": "장애인", "query": "장애인"},
+    {"label": "장애인+복지부", "query": "+장애인 +복지부"},
 ]
 USE_TITLE_ONLY = False
 
