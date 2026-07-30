@@ -1,11 +1,5 @@
 {
   "urls": [
-    "http://www.mygoyang.com/news/articleView.html?idxno=89395",
-    "https://www.beminor.com/news/articleView.html?idxno=30085",
-    "https://www.beminor.com/news/articleView.html?idxno=30091",
-    "http://www.4th.kr/news/articleView.html?idxno=2114174",
-    "https://www.segye.com/newsView/20260702515793?OutUrl=naver",
-    "https://www.nocutnews.co.kr/news/6542392?utm_source=naver&utm_medium=article&utm_campaign=20260702054258",
     "https://biz.heraldcorp.com/article/10796292?ref=naver",
     "https://www.beminor.com/news/articleView.html?idxno=30084",
     "https://www.segye.com/newsView/20260702506796?OutUrl=naver",
@@ -2999,12 +2993,15 @@
     "https://medicalworldnews.co.kr/news/view.php?idx=1510976263",
     "https://www.newsis.com/view/NISX20260730_0003730626",
     "http://www.lawissue.co.kr/view.php?ud=202607301937086246f4ab64559d_12",
-    "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8624621&ref=A"
+    "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8624621&ref=A",
+    "https://www.ablenews.co.kr/news/articleView.html?idxno=231851",
+    "https://www.imaeil.com/page/view/2026070315021346523",
+    "https://www.beminor.com/news/articleView.html?idxno=30094",
+    "https://www.seoul.co.kr/news/publicnews/seoul_local/news_seoul/2026/07/30/20260730500259?wlog_tag3=naver",
+    "https://www.incheonilbo.com/news/articleView.html?idxno=1328521",
+    "https://medicalworldnews.co.kr/news/view.php?idx=1510976269"
   ],
   "sigs": [
-    "아산시50만자족도시견인공공건축건립속도",
-    "경기도광주시의회추경심사앞두고전문성높인다",
-    "장애인고용공단장고와고용이공공부문캐릭터본선경합",
     "신용도올려줄게청각장애인계좌로도박자금세탁한일당검거",
     "동두천양주교육지원청ai글래스기반리터러시교육마무리",
     "경기광주시의회추경심사앞두고의정활동기본교육실시",
@@ -4001,6 +3998,9 @@
     "강원대아주대김안과서울시장애인치",
     "김민석노태악후임제청지연에개혁다음은사법개혁조희대탄",
     "한국장애인개발원서울센터서울대병원최중증발달장애인행동지원",
-    "3세지능장애인에절도죄법원은무죄"
+    "3세지능장애인에절도죄법원은무죄",
+    "서초에서주차어디에하지공영주차장25곳실시간으로확인해요",
+    "민주당전대첫관문충청세후보당심경쟁",
+    "문신사법시행대비표준지침마련업소3개구역구획의무화"
   ]
 }
