@@ -1,14 +1,5 @@
 {
   "urls": [
-    "https://biz.heraldcorp.com/article/10796292?ref=naver",
-    "https://www.beminor.com/news/articleView.html?idxno=30084",
-    "https://www.segye.com/newsView/20260702506796?OutUrl=naver",
-    "https://www.sedaily.com/article/20062912?ref=naver",
-    "https://www.womennews.co.kr/news/articleView.html?idxno=279470",
-    "https://www.news1.kr/society/incident-accident/6215315",
-    "https://www.kukinews.com/article/view/kuk202607020012",
-    "https://biz.chosun.com/topics/topics_social/2026/07/02/L5Y343WBT5DGVEQTRUQWOXAF3M/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-    "https://www.hankookilbo.com/news/article/A2026070206540005028?did=NA",
     "https://www.newsis.com/view/NISX20260701_0003692292",
     "https://www.segye.com/newsView/20260701517138?OutUrl=naver",
     "https://www.wikitree.co.kr/articles/1144169",
@@ -2999,11 +2990,18 @@
     "https://www.beminor.com/news/articleView.html?idxno=30094",
     "https://www.seoul.co.kr/news/publicnews/seoul_local/news_seoul/2026/07/30/20260730500259?wlog_tag3=naver",
     "https://www.incheonilbo.com/news/articleView.html?idxno=1328521",
-    "https://medicalworldnews.co.kr/news/view.php?idx=1510976269"
+    "https://medicalworldnews.co.kr/news/view.php?idx=1510976269",
+    "http://www.mygoyang.com/news/articleView.html?idxno=89395",
+    "https://www.beminor.com/news/articleView.html?idxno=30085",
+    "https://www.beminor.com/news/articleView.html?idxno=30091",
+    "http://www.4th.kr/news/articleView.html?idxno=2114174",
+    "https://www.segye.com/newsView/20260702515793?OutUrl=naver",
+    "https://www.nocutnews.co.kr/news/6542392?utm_source=naver&utm_medium=article&utm_campaign=20260702054258",
+    "https://www.newstnt.com/news/articleView.html?idxno=712306",
+    "https://www.khan.co.kr/article/202607302045005",
+    "https://www.danbinews.com/news/articleView.html?idxno=33376"
   ],
   "sigs": [
-    "신용도올려줄게청각장애인계좌로도박자금세탁한일당검거",
-    "동두천양주교육지원청ai글래스기반리터러시교육마무리",
     "경기광주시의회추경심사앞두고의정활동기본교육실시",
     "경주시수성구대구남구대구대대구보건대대구시교육청",
     "용인시의회장애인체육시설과어르신교통비지원사업부결",
@@ -4001,6 +3999,8 @@
     "3세지능장애인에절도죄법원은무죄",
     "서초에서주차어디에하지공영주차장25곳실시간으로확인해요",
     "민주당전대첫관문충청세후보당심경쟁",
-    "문신사법시행대비표준지침마련업소3개구역구획의무화"
+    "문신사법시행대비표준지침마련업소3개구역구획의무화",
+    "앱하나못깔았는데태블릿배워일하니사는게즐거워희망이음",
+    "청년참여소득"
   ]
 }
