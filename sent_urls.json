@@ -1,16 +1,5 @@
 {
   "urls": [
-    "https://www.newsis.com/view/NISX20260701_0003692292",
-    "https://www.segye.com/newsView/20260701517138?OutUrl=naver",
-    "https://www.wikitree.co.kr/articles/1144169",
-    "https://news.cpbc.co.kr/article/1174028?division=NAVER",
-    "https://www.ablenews.co.kr/news/articleView.html?idxno=231764",
-    "https://www.nocutnews.co.kr/news/6541103?utm_source=naver&utm_medium=article&utm_campaign=20260701071941",
-    "https://www.edaily.co.kr/news/newspath.asp?newsid=02200886645510256",
-    "https://www.gukjenews.com/news/articleView.html?idxno=3622222",
-    "https://health.chosun.com/site/data/html_dir/2026/06/30/2026063002882.html",
-    "https://www.chosun.com/national/national_general/2026/06/30/BYJHED7YT5DWFKBTLNVZ3OWSEM/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-    "http://www.iminju.net/news/articleView.html?idxno=166015",
     "https://www.getnews.co.kr/news/articleView.html?idxno=874366",
     "https://weekly.hankooki.com/news/articleView.html?idxno=7173214",
     "https://www.polinews.co.kr/news/articleView.html?idxno=736260",
@@ -2999,11 +2988,20 @@
     "https://www.nocutnews.co.kr/news/6542392?utm_source=naver&utm_medium=article&utm_campaign=20260702054258",
     "https://www.newstnt.com/news/articleView.html?idxno=712306",
     "https://www.khan.co.kr/article/202607302045005",
-    "https://www.danbinews.com/news/articleView.html?idxno=33376"
+    "https://www.danbinews.com/news/articleView.html?idxno=33376",
+    "https://biz.heraldcorp.com/article/10796292?ref=naver",
+    "https://www.beminor.com/news/articleView.html?idxno=30084",
+    "https://www.segye.com/newsView/20260702506796?OutUrl=naver",
+    "https://www.sedaily.com/article/20062912?ref=naver",
+    "https://www.womennews.co.kr/news/articleView.html?idxno=279470",
+    "https://www.news1.kr/society/incident-accident/6215315",
+    "https://www.kukinews.com/article/view/kuk202607020012",
+    "https://biz.chosun.com/topics/topics_social/2026/07/02/L5Y343WBT5DGVEQTRUQWOXAF3M/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+    "https://www.hankookilbo.com/news/article/A2026070206540005028?did=NA",
+    "https://www.ulsanpress.net/news/articleView.html?idxno=580141",
+    "https://www.kbsm.net/news/view.php?idx=528696"
   ],
   "sigs": [
-    "경기광주시의회추경심사앞두고의정활동기본교육실시",
-    "경주시수성구대구남구대구대대구보건대대구시교육청",
     "용인시의회장애인체육시설과어르신교통비지원사업부결",
     "광주시의회추경예산심사역량강화본격적의정활동속도내",
     "영산대총장배전국태권도품새대회성료1800여명참가",
@@ -4001,6 +3999,8 @@
     "민주당전대첫관문충청세후보당심경쟁",
     "문신사법시행대비표준지침마련업소3개구역구획의무화",
     "앱하나못깔았는데태블릿배워일하니사는게즐거워희망이음",
-    "청년참여소득"
+    "청년참여소득",
+    "요가의향기디카시로담다",
+    "adhd조기에발견하고치료하면아이의미래가달"
   ]
 }
