@@ -1,8 +1,5 @@
 {
   "urls": [
-    "https://www.gosiweek.com/article/1065575353166060",
-    "https://www.news1.kr/society/education/6218601",
-    "https://www.fashionbiz.co.kr/article/227594",
     "https://www.newspim.com/news/view/20260706000083",
     "https://www.segye.com/newsView/20260705509626?OutUrl=naver",
     "https://www.fntoday.co.kr/news/articleView.html?idxno=387585",
@@ -2999,10 +2996,12 @@
     "https://www.mk.co.kr/article/12113893",
     "https://www.usmbc.co.kr/NewsArticle/854174",
     "http://www.phmbc.co.kr/www/news/desk_news?idx=203833&mode=view",
-    "https://www.discoverynews.kr/news/articleView.html?idxno=1097592"
+    "https://www.discoverynews.kr/news/articleView.html?idxno=1097592",
+    "https://www.news1.kr/society/general-society/6245883",
+    "http://www.srtimes.kr/news/articleView.html?idxno=208881",
+    "https://www.edaily.co.kr/news/newspath.asp?newsid=07373446645520096"
   ],
   "sigs": [
-    "진주장애인지원센터하계방학희망나눔학교입학식성료",
     "경북도사회적기업연계일자리웰컴데이개최취업취약계층고",
     "서산시현대차임산부맞춤형전기버스달린다전국최초도입눈",
     "kai나눔봉사단편백칩양말목낮잠베개제작봉사",
@@ -4001,6 +4000,7 @@
     "은평구어르신건강교실참여자모집외",
     "공소기각사유확대에국힘이재명재판지우기민주국민위한제",
     "비틀즈퀸명곡으로청년에게희망과용기를아르텔필하모닉내",
-    "31일저녁서울전역폭염열대야특보지속서울시2단계비상근무"
+    "31일저녁서울전역폭염열대야특보지속서울시2단계비상근무",
+    "6세아이숨졌는데연구진유전자치료성과만발표"
   ]
 }
