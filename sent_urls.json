@@ -1,8 +1,5 @@
 {
   "urls": [
-    "https://www.news1.kr/local/moi/6218426",
-    "https://www.newsis.com/view/NISX20260706_0003697058",
-    "https://www.ablenews.co.kr/news/articleView.html?idxno=231844",
     "https://www.gosiweek.com/article/1065575353166060",
     "https://www.news1.kr/society/education/6218601",
     "https://www.fashionbiz.co.kr/article/227594",
@@ -2999,10 +2996,12 @@
     "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8625655&ref=A",
     "http://www.enewstoday.co.kr/news/articleView.html?idxno=2454716",
     "https://imnews.imbc.com/replay/2026/nwdesk/article/6841606_37004.html",
-    "https://www.mk.co.kr/article/12113893"
+    "https://www.mk.co.kr/article/12113893",
+    "https://www.usmbc.co.kr/NewsArticle/854174",
+    "http://www.phmbc.co.kr/www/news/desk_news?idx=203833&mode=view",
+    "https://www.discoverynews.kr/news/articleView.html?idxno=1097592"
   ],
   "sigs": [
-    "양대체전경기장곧마무리이젠성공개최다",
     "진주장애인지원센터하계방학희망나눔학교입학식성료",
     "경북도사회적기업연계일자리웰컴데이개최취업취약계층고",
     "서산시현대차임산부맞춤형전기버스달린다전국최초도입눈",
@@ -4001,6 +4000,7 @@
     "전북도농촌돌봄모범6년연속사업이어가",
     "은평구어르신건강교실참여자모집외",
     "공소기각사유확대에국힘이재명재판지우기민주국민위한제",
-    "비틀즈퀸명곡으로청년에게희망과용기를아르텔필하모닉내"
+    "비틀즈퀸명곡으로청년에게희망과용기를아르텔필하모닉내",
+    "31일저녁서울전역폭염열대야특보지속서울시2단계비상근무"
   ]
 }
