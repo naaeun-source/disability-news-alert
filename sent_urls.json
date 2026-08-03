@@ -1,8 +1,5 @@
 {
   "urls": [
-    "http://www.finomy.com/news/articleView.html?idxno=257433",
-    "https://www.cnbnews.com/news/articleView.html?idxno=1008258",
-    "https://www.taxtimes.co.kr/news/article.html?no=276031",
     "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202607151414359080313",
     "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202607151419436200317",
     "https://www.newscammp.co.kr/news/articleView.html?idxno=6565",
@@ -2999,11 +2996,12 @@
     "https://www.k-health.com/news/articleView.html?idxno=100457",
     "https://www.dynews.co.kr/news/articleView.html?idxno=860342",
     "http://www.thefirstmedia.net/news/articleView.html?idxno=205239",
-    "https://www.hankookilbo.com/news/article/A2026080318460001674?did=NA"
+    "https://www.hankookilbo.com/news/article/A2026080318460001674?did=NA",
+    "https://www.venturesquare.net/1103226/",
+    "https://www.segye.com/newsView/20260803518216?OutUrl=naver",
+    "http://www.breaknews.com/1226433"
   ],
   "sigs": [
-    "서대문구의회이용준의원장애인친화이미용시설지원근거마련",
-    "장동주대표기술보다사람이먼저동명시스템즈품질",
     "서울디지털대스포츠학과스포츠분야국가자격증11명취득",
     "돌봄이필요한주민조기발굴은평구의료요양통합돌봄대상자",
     "서울달금토밤11시까지운행8월부터심야운영시작",
@@ -4001,6 +3999,8 @@
     "노동부인천사업장장애인대상성범죄체불확인인증취소착수",
     "양극성장애뇌구조변화일으키는새위험유전자확인",
     "청주혜원학교ai에듀테크기반맞춤교육학생성장온힘",
-    "금천구실종20대5일만에광진구서발견가족품으로"
+    "금천구실종20대5일만에광진구서발견가족품으로",
+    "전용쉼터에살수차무료생수취약계층온열질환예방총력역대급",
+    "동정아닌당당한주체로발달장애자매가건네는공감과울림"
   ]
 }
