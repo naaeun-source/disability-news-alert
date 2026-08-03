@@ -1,7 +1,5 @@
 {
   "urls": [
-    "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202607151414359080313",
-    "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202607151419436200317",
     "https://www.newscammp.co.kr/news/articleView.html?idxno=6565",
     "http://www.newsian.co.kr/news/articleView.html?idxno=92309",
     "http://www.thevaluenews.co.kr/news/view.php?idx=200107",
@@ -2999,7 +2997,9 @@
     "https://www.hankookilbo.com/news/article/A2026080318460001674?did=NA",
     "https://www.venturesquare.net/1103226/",
     "https://www.segye.com/newsView/20260803518216?OutUrl=naver",
-    "http://www.breaknews.com/1226433"
+    "http://www.breaknews.com/1226433",
+    "https://www.g-enews.com/view.php?ud=202608032140095497112616b072_1",
+    "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8627365&ref=A"
   ],
   "sigs": [
     "서울디지털대스포츠학과스포츠분야국가자격증11명취득",
