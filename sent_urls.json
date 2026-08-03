@@ -1,6 +1,5 @@
 {
   "urls": [
-    "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202607151638454020360",
     "https://www.etoday.co.kr/news/view/2604215",
     "https://www.koit.co.kr/news/articleView.html?idxno=208015",
     "https://www.todayenergy.kr/news/articleView.html?idxno=300472",
@@ -2999,10 +2998,10 @@
     "https://www.beminor.com/news/articleView.html?idxno=30149",
     "https://www.ablenews.co.kr/news/articleView.html?idxno=232025",
     "https://www.kwnews.co.kr/article/20260803500434",
-    "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8627125&ref=A"
+    "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8627125&ref=A",
+    "https://biz.heraldcorp.com/article/10829608?ref=naver"
   ],
   "sigs": [
-    "현대차임산부맞춤형st1투입교통약자이동지원확대",
     "강한체력이강한정신력을만듭니다정구전",
     "영종구복지사각지대해소제1기긴급지원심의위원회출범",
     "민원창구가임대아파트안으로한마음주민의생활제안",
@@ -4001,6 +4000,7 @@
     "진주장애인복지관발달장애인가족여행마무리",
     "노동자성폭행인천장애인표준사업장인증취소형사입건",
     "인제군의회2026년8월3일",
-    "장애인거주시설폐쇄명령하루만에병원행적법한지침"
+    "장애인거주시설폐쇄명령하루만에병원행적법한지침",
+    "노동부인천사업장장애인대상성범죄체불확인인증취소착수"
   ]
 }
