@@ -1,9 +1,5 @@
 {
   "urls": [
-    "https://www.idomin.com/news/articleView.html?idxno=2010240",
-    "https://www.cnbizm.com/news/articleView.html?idxno=308738",
-    "https://www.sedaily.com/article/20068270?ref=naver",
-    "https://www.energy-news.co.kr/news/articleView.html?idxno=226839",
     "https://www.dnews.co.kr/uhtml/view.jsp?idxno=202607151638454020360",
     "https://www.etoday.co.kr/news/view/2604215",
     "https://www.koit.co.kr/news/articleView.html?idxno=208015",
@@ -2999,11 +2995,13 @@
     "https://www.ibabynews.com/news/articleView.html?idxno=153432",
     "https://www.polinews.co.kr/news/articleView.html?idxno=738984",
     "https://www.gnnews.co.kr/news/articleView.html?idxno=642404",
-    "https://www.newsis.com/view/NISX20260803_0003734814"
+    "https://www.newsis.com/view/NISX20260803_0003734814",
+    "https://www.beminor.com/news/articleView.html?idxno=30149",
+    "https://www.ablenews.co.kr/news/articleView.html?idxno=232025",
+    "https://www.kwnews.co.kr/article/20260803500434",
+    "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8627125&ref=A"
   ],
   "sigs": [
-    "임산부위해달린다현대차서산에맞춤형특화차량투입",
-    "국민의힘보완수사전담부서로부족하다고주장한이유",
     "현대차임산부맞춤형st1투입교통약자이동지원확대",
     "강한체력이강한정신력을만듭니다정구전",
     "영종구복지사각지대해소제1기긴급지원심의위원회출범",
@@ -4001,6 +3999,8 @@
     "공연장부터미술관야외광장까지예술의전당에서즐기",
     "최고위원선거관전포인트수석최고그리고5위",
     "진주장애인복지관발달장애인가족여행마무리",
-    "노동자성폭행인천장애인표준사업장인증취소형사입건"
+    "노동자성폭행인천장애인표준사업장인증취소형사입건",
+    "인제군의회2026년8월3일",
+    "장애인거주시설폐쇄명령하루만에병원행적법한지침"
   ]
 }
