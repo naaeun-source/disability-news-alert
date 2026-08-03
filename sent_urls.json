@@ -1,7 +1,5 @@
 {
   "urls": [
-    "https://www.todayenergy.kr/news/articleView.html?idxno=300472",
-    "http://www.inews24.com/view/1985888",
     "http://www.finomy.com/news/articleView.html?idxno=257433",
     "https://www.cnbnews.com/news/articleView.html?idxno=1008258",
     "https://www.taxtimes.co.kr/news/article.html?no=276031",
@@ -2999,10 +2997,11 @@
     "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8627125&ref=A",
     "https://biz.heraldcorp.com/article/10829608?ref=naver",
     "https://www.k-health.com/news/articleView.html?idxno=100457",
-    "https://www.dynews.co.kr/news/articleView.html?idxno=860342"
+    "https://www.dynews.co.kr/news/articleView.html?idxno=860342",
+    "http://www.thefirstmedia.net/news/articleView.html?idxno=205239",
+    "https://www.hankookilbo.com/news/article/A2026080318460001674?did=NA"
   ],
   "sigs": [
-    "민원창구가임대아파트안으로한마음주민의생활제안",
     "서대문구의회이용준의원장애인친화이미용시설지원근거마련",
     "장동주대표기술보다사람이먼저동명시스템즈품질",
     "서울디지털대스포츠학과스포츠분야국가자격증11명취득",
@@ -4001,6 +4000,7 @@
     "장애인거주시설폐쇄명령하루만에병원행적법한지침",
     "노동부인천사업장장애인대상성범죄체불확인인증취소착수",
     "양극성장애뇌구조변화일으키는새위험유전자확인",
-    "청주혜원학교ai에듀테크기반맞춤교육학생성장온힘"
+    "청주혜원학교ai에듀테크기반맞춤교육학생성장온힘",
+    "금천구실종20대5일만에광진구서발견가족품으로"
   ]
 }
