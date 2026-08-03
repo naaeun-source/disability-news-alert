@@ -1,6 +1,5 @@
 {
   "urls": [
-    "https://www.yna.co.kr/view/AKR20260714159700004?input=1195m",
     "https://www.newsis.com/view/NISX20260714_0003709367",
     "http://www.srtimes.kr/news/articleView.html?idxno=207540",
     "https://www.beminor.com/news/articleView.html?idxno=30149",
@@ -2999,10 +2998,10 @@
     "https://www.munhwa.com/article/11606924?ref=naver",
     "https://www.ablenews.co.kr/news/articleView.html?idxno=232371",
     "https://www.kukinews.com/article/view/kuk202608030158",
-    "https://www.eroun.net/news/articleView.html?idxno=86902"
+    "https://www.eroun.net/news/articleView.html?idxno=86902",
+    "https://www.ibabynews.com/news/articleView.html?idxno=153422"
   ],
   "sigs": [
-    "gh의남다른중기사랑63개기업에공공조달문턱낮춰",
     "보완수사로3달간경찰송치사건무고위증143건적발",
     "의정부시내년장애인콜택시1대추가총46대운영",
     "보령시문화예술회관장애인관람석개선접근성높였다",
@@ -4001,6 +4000,7 @@
     "장애친화기술디자인디테크공모전접수시작",
     "장애인활동지원중계기관활동지원부정수급모니터링철저히해야",
     "박수현지사발전통합본사유치대한민국에너지전환",
-    "장애인기업종합지원센터디테크공모전접수시작장애친화기술"
+    "장애인기업종합지원센터디테크공모전접수시작장애친화기술",
+    "대한한의사협회손해보험사이익위해국민건강보험희"
   ]
 }
