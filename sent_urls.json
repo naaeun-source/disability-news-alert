@@ -1,7 +1,5 @@
 {
   "urls": [
-    "https://www.etoday.co.kr/news/view/2604215",
-    "https://www.koit.co.kr/news/articleView.html?idxno=208015",
     "https://www.todayenergy.kr/news/articleView.html?idxno=300472",
     "http://www.inews24.com/view/1985888",
     "http://www.finomy.com/news/articleView.html?idxno=257433",
@@ -2999,11 +2997,11 @@
     "https://www.ablenews.co.kr/news/articleView.html?idxno=232025",
     "https://www.kwnews.co.kr/article/20260803500434",
     "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8627125&ref=A",
-    "https://biz.heraldcorp.com/article/10829608?ref=naver"
+    "https://biz.heraldcorp.com/article/10829608?ref=naver",
+    "https://www.k-health.com/news/articleView.html?idxno=100457",
+    "https://www.dynews.co.kr/news/articleView.html?idxno=860342"
   ],
   "sigs": [
-    "강한체력이강한정신력을만듭니다정구전",
-    "영종구복지사각지대해소제1기긴급지원심의위원회출범",
     "민원창구가임대아파트안으로한마음주민의생활제안",
     "서대문구의회이용준의원장애인친화이미용시설지원근거마련",
     "장동주대표기술보다사람이먼저동명시스템즈품질",
@@ -4001,6 +3999,8 @@
     "노동자성폭행인천장애인표준사업장인증취소형사입건",
     "인제군의회2026년8월3일",
     "장애인거주시설폐쇄명령하루만에병원행적법한지침",
-    "노동부인천사업장장애인대상성범죄체불확인인증취소착수"
+    "노동부인천사업장장애인대상성범죄체불확인인증취소착수",
+    "양극성장애뇌구조변화일으키는새위험유전자확인",
+    "청주혜원학교ai에듀테크기반맞춤교육학생성장온힘"
   ]
 }
