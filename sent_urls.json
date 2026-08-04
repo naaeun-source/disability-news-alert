@@ -1,12 +1,5 @@
 {
   "urls": [
-    "https://www.obsnews.co.kr/news/articleView.html?idxno=1531389",
-    "https://www.seoul.co.kr/news/publicnews/seoul_local/news_seoul/2026/07/21/20260721500344?wlog_tag3=naver",
-    "https://www.newsis.com/view/NISX20260721_0003717726",
-    "https://biz.heraldcorp.com/article/10815697?ref=naver",
-    "https://www.dailyt.co.kr/newsView/dlt202607200011",
-    "https://www.ibabynews.com/news/articleView.html?idxno=153057",
-    "https://www.news1.kr/local/moi/6234356",
     "https://www.mt.co.kr/politics/2026/07/22/2026072115385315261",
     "https://www.newsis.com/view/NISI20260722_0021372863",
     "https://www.newsis.com/view/NISI20260722_0021372867",
@@ -2999,12 +2992,16 @@
     "http://www.hemophilia.co.kr/news/articleView.html?idxno=43599",
     "https://news.tvchosun.com/site/data/html_dir/2026/08/04/2026080490172.html",
     "https://www.thereport.co.kr/news/articleView.html?idxno=90151",
-    "https://www.ablenews.co.kr/news/articleView.html?idxno=232422"
+    "https://www.ablenews.co.kr/news/articleView.html?idxno=232422",
+    "https://www.ntoday.co.kr/news/articleView.html?idxno=128293",
+    "https://www.beminor.com/news/articleView.html?idxno=30164",
+    "https://www.tbc.co.kr/news/view?pno=20260721085609AE02630&id=208672",
+    "https://www.chosun.com/national/welfare-medical/2026/07/21/3UM7OEKRNJCOVPRC5UH2C43EXE/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+    "http://www.fnnews.com/news/202608041802123733",
+    "https://www.kwnews.co.kr/article/20260804501747",
+    "https://biz.sbs.co.kr/article_hub/20000326629?division=NAVER"
   ],
   "sigs": [
-    "색동원밖다섯번의하루",
-    "390만원조리원비가0원서울형안심산후조리원예약행렬",
-    "ai는연구인간은판단자율과학시스템연내출연연배포",
     "장애인기업종합지원센터일상속장애친화기술공모전개최",
     "카카오뱅크투자탭누적이용자500만명돌파",
     "비용부담걱정뚝서울형안심산후조리원5곳으로늘었다",
@@ -4001,6 +3998,9 @@
     "차학연카페테라스에서여유로운일상로맨스의절댓값활약",
     "질병청의사소통어려운사람위한읽기쉬운온열질환예방안내서",
     "읽기쉬운온열질환예방",
-    "통합돌봄자립지원법패러다임변화장애인주간이용시설기능강화법"
+    "통합돌봄자립지원법패러다임변화장애인주간이용시설기능강화법",
+    "서울전역폭염중대경보옥외근로자작업중단",
+    "춘천시장애인종합복지관인권교육",
+    "질병청발달장애인위한온열질환의사소통포스터배포"
   ]
 }
