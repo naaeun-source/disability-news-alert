@@ -1,9 +1,5 @@
 {
   "urls": [
-    "https://www.newsis.com/view/NISI20260722_0021372861",
-    "https://www.khan.co.kr/article/202607221125001",
-    "https://www.ajunews.com/view/20260722112102958",
-    "https://www.etoday.co.kr/news/view/2606093",
     "https://www.yna.co.kr/view/AKR20260722051400004?input=1195m",
     "http://tbs.seoul.kr/news/newsView.do?typ_800=7&idx_800=3537392&seq_800=20530267",
     "https://www.newspim.com/news/view/20260722000149",
@@ -2999,13 +2995,13 @@
     "https://medicalworldnews.co.kr/news/view.php?idx=1510976408",
     "http://www.rightknow.co.kr/news/articleView.html?idxno=34525",
     "https://www.kdpress.co.kr/news/articleView.html?idxno=207487",
-    "https://www.cctoday.co.kr/news/articleView.html?idxno=2234311"
+    "https://www.cctoday.co.kr/news/articleView.html?idxno=2234311",
+    "https://www.hankyung.com/article/2026080450177",
+    "https://www.discoverynews.kr/news/articleView.html?idxno=1097841",
+    "https://www.news1.kr/local/moi/6249229",
+    "https://www.khan.co.kr/article/202608042103015"
   ],
   "sigs": [
-    "나의괴베클리테페",
-    "한국도로공사서비스충북권역본부너른품센터에기능보강비200만원기",
-    "1500원에특수절도발달장애인수사정당했나",
-    "목포시의회의대전남서부권에실질적결단내려야",
     "폭염더위에온열질환비상올해누적사망자벌써9명",
     "정부최대인상강조말고저소득층지키는적정기준선제시해야",
     "정부기준중위소득역대최고포장국민생활불안정해질것",
@@ -4001,6 +3997,10 @@
     "복지부질병청폭염취약계층보호총력드론예찰aac홍보물배포",
     "책읽을권리도격차시각장애다문화아동독서접근성과제",
     "425대한민국폭염생존선을다시세우다",
-    "재밌는과학놀이에풍덩무더위싹"
+    "재밌는과학놀이에풍덩무더위싹",
+    "서울온열질환자하루23명최다첫폭염중대경보발령",
+    "서울전역올여름첫폭염중대경보발효서울시비상대응체계가",
+    "서울전역올해첫폭염중대경보온열질환자23명늘어",
+    "서울시취약계층에냉방비4만원씩지원"
   ]
 }
