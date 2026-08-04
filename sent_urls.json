@@ -1,11 +1,5 @@
 {
   "urls": [
-    "https://www.yna.co.kr/view/AKR20260722051400004?input=1195m",
-    "http://tbs.seoul.kr/news/newsView.do?typ_800=7&idx_800=3537392&seq_800=20530267",
-    "https://www.newspim.com/news/view/20260722000149",
-    "https://www.mt.co.kr/policy/2026/07/22/2026072210073350785",
-    "https://www.newspim.com/news/view/20260722000378",
-    "https://www.news1.kr/local/moi/6234766",
     "https://www.hg-times.com/news/articleView.html?idxno=303781",
     "http://www.aptn.co.kr/news/articleView.html?idxno=112497",
     "https://www.cnbizm.com/news/articleView.html?idxno=309213",
@@ -2999,12 +2993,15 @@
     "https://www.hankyung.com/article/2026080450177",
     "https://www.discoverynews.kr/news/articleView.html?idxno=1097841",
     "https://www.news1.kr/local/moi/6249229",
-    "https://www.khan.co.kr/article/202608042103015"
+    "https://www.khan.co.kr/article/202608042103015",
+    "https://www.newscj.com/news/articleView.html?idxno=3422503",
+    "https://www.etoday.co.kr/news/view/2611019",
+    "https://www.g-enews.com/view.php?ud=202608042125589841923c501012_1",
+    "https://www.sedaily.com/article/20075779?ref=naver",
+    "https://news.sbs.co.kr/news/endPage.do?news_id=N1008690388&plink=ORI&cooper=NAVER",
+    "https://news.jtbc.co.kr/article/NB12311735?influxDiv=NAVER"
   ],
   "sigs": [
-    "폭염더위에온열질환비상올해누적사망자벌써9명",
-    "정부최대인상강조말고저소득층지키는적정기준선제시해야",
-    "정부기준중위소득역대최고포장국민생활불안정해질것",
     "서울달금토밤11시까지뜬다",
     "역대최고인상내세운정부시민단체기준중위소득현실반영못해",
     "서울온열질환자하루새7명올여름환자133명사망2명",
@@ -4001,6 +3998,9 @@
     "서울온열질환자하루23명최다첫폭염중대경보발령",
     "서울전역올여름첫폭염중대경보발효서울시비상대응체계가",
     "서울전역올해첫폭염중대경보온열질환자23명늘어",
-    "서울시취약계층에냉방비4만원씩지원"
+    "서울시취약계층에냉방비4만원씩지원",
+    "극한폭염에서울서온열질환자23명증가",
+    "서울어제온열질환자올여름최다23명폭염중대경보첫발효",
+    "폭염중대경보내려진서울어제온열질환자23명올해최다"
   ]
 }
