@@ -1,9 +1,5 @@
 {
   "urls": [
-    "https://www.ccdn.co.kr/news/articleView.html?idxno=1090270",
-    "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3029941",
-    "https://www.dkilbo.com/news/articleView.html?idxno=549674",
-    "https://www.segye.com/newsView/20260726508362?OutUrl=naver",
     "https://www.hankyung.com/article/2026072666151",
     "http://www.samdailbo.com/news/articleView.html?idxno=268055",
     "http://www.fnnews.com/news/202607261758575586",
@@ -2999,11 +2995,13 @@
     "https://www.yna.co.kr/view/AKR20260805155200007?input=1195m",
     "https://www.betanews.net/article/view/beta202608050069",
     "https://www.kmib.co.kr/article/view.asp?arcid=1785915831&code=11131900&cp=nv",
-    "https://www.incheonilbo.com/news/articleView.html?idxno=1328964"
+    "https://www.incheonilbo.com/news/articleView.html?idxno=1328964",
+    "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8629671&ref=A",
+    "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8629649&ref=A",
+    "https://www.idaegu.co.kr/news/articleView.html?idxno=555967",
+    "http://www.newstown.co.kr/news/articleView.html?idxno=711499"
   ],
   "sigs": [
-    "주력품목키우고후속신약잇고jw중외제약희귀의약품사업",
-    "7월29일",
     "오늘의금융계소식신한은행bnk금융그룹",
     "홀트산하홀트강동복지관지역주민재능나눔아로마테라피드림캐",
     "공주정명학교",
@@ -4001,6 +3999,8 @@
     "방한한맨시티코치들스페셜올림픽발달장애선수들지도",
     "방송인럭키차바이오텍제대혈은행아이코드에자녀제대혈보관",
     "제도변해도변함없는법의목표는에대한신뢰보호",
-    "통합돌봄강조정은경공공의료외친박찬대"
+    "통합돌봄강조정은경공공의료외친박찬대",
+    "대구공공어린이재활의료센터소아재활거점우뚝",
+    "박관열시장의시민행복도시배움과돌봄이광주"
   ]
 }
