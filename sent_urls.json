@@ -1,8 +1,5 @@
 {
   "urls": [
-    "https://www.newsmap.co.kr/news/articleView.html?idxno=3191",
-    "https://kpenews.com/View.aspx?No=4226391",
-    "https://weekly.hankooki.com/news/articleView.html?idxno=7184163",
     "https://www.etoday.co.kr/news/view/2625299",
     "https://biz.heraldcorp.com/article/10872941?ref=naver",
     "http://www.dtnews24.com/news/articleView.html?idxno=815219",
@@ -2999,10 +2996,12 @@
     "https://news.jtbc.co.kr/article/NB12319920?influxDiv=NAVER",
     "http://www.sisunnews.co.kr/news/articleView.html?idxno=246630",
     "http://news.ebs.co.kr/ebsnews/allView/60772542/N",
-    "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8671125&ref=A"
+    "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8671125&ref=A",
+    "https://www.cnbizm.com/news/articleView.html?idxno=316250",
+    "http://www.bizwnews.com/news/articleView.html?idxno=147024",
+    "https://www.vegannews.co.kr/news/article.html?no=387193"
   ],
   "sigs": [
-    "재혼오윤아힐신고길게뻗은다리깜짝군살없는몸매",
     "네일숍원장을꿈꾸는당찬목소리대구선명학교박혜림학생전국대",
     "나눔으로사람잇는다김만덕복합센터제주원도심에문활짝",
     "대통령기자회견d1성한용내용보다대통령태도가더중요최병묵",
@@ -4001,6 +4000,7 @@
     "30여차례거부에도추행12세친구여동생성폭행20대징역7년",
     "디스에이블드발달장애예술가디지털작품전시서비스론칭서울",
     "다함께가을장애넘어웃음꽃",
-    "박현주장애아동양육부담복지지원조례안발의"
+    "박현주장애아동양육부담복지지원조례안발의",
+    "장애인주차표지차량등록만으론부족"
   ]
 }
